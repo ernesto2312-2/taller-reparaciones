@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+dist/
+dist-ssr/
+
+# Variables de entorno locales
+.env
+.env.local
+.env.*.local
+
+# PocketBase: ejecutable y datos locales (cada máquina genera los suyos)
+Poket Base/pb_data/
+Poket Base/pb_public/
+Poket Base/pocketbase.exe
+Poket Base/pocketbase
+pocketbase.exe
+
+# Logs y temporales
+*.log
+.DS_Store
+Thumbs.db
