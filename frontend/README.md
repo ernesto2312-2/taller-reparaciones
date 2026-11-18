@@ -1,16 +1,35 @@
-# React + Vite
+# Frontend — El Taller
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz React + Vite del sistema de gestión de reparaciones.
 
-Currently, two official plugins are available:
+La documentación completa (instalación, PocketBase, datos de prueba y reglas de negocio) está en el [README principal](../README.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Comandos
 
-## React Compiler
+```bash
+npm install
+npm run dev
+npm run lint
+npm run build
+npm run preview
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Variables de entorno
 
-## Expanding the ESLint configuration
+Copie `.env.example` como `.env`:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```env
+VITE_POCKETBASE_URL=http://127.0.0.1:8090
+```
+
+## Organización
+
+```text
+src/
+├── components/   Componentes reutilizables
+├── hooks/        Carga de datos y estado
+├── layouts/      Estructura visual
+├── pages/        Vistas por ruta
+├── services/     Acceso REST a PocketBase
+└── utils/        Estados, filtros, formatos y validaciones
+```
